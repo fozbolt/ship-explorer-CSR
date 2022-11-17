@@ -3,7 +3,7 @@ import { ApolloProvider } from "@apollo/client";
 import { apolloClient } from "../apolloClient";
 import Router from "next/router";
 import { useState, useEffect } from "react";
-import "../styles/globals.css";
+import "../styles/Globals.css";
 import { Oval } from "react-loader-spinner";
 
 function MyApp({ Component, pageProps }: AppProps) {

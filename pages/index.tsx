@@ -7,6 +7,10 @@ import Image from "next/image";
 import { apolloClient } from "../apolloClient";
 import { Oval } from "react-loader-spinner";
 
+type Ship = {
+  [key: string]: any;
+};
+
 export default function Home() {
   /* ships - from Server side rendering */
   //   console.log(ships);

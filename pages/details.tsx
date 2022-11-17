@@ -8,6 +8,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { Oval } from "react-loader-spinner";
 
+type Mission = {
+  name: string;
+  flight: string;
+};
+
 export default function DetailsPage() {
   /* ship - from apollo useQuery - Client side rendering*/
   const router = useRouter();
@@ -158,7 +163,7 @@ export default function DetailsPage() {
             width="24"
           />
           <div id={styles.missionsContainer}>
-            {missions?.map((mission: any) => (
+            {missions?.map((mission: Mission) => (
               <div id={styles.missionDiv} key={mission.name}>
                 <div id={styles.missionName}>{mission.name}</div>
                 <div id={styles.missioFlight}>Flight:{mission.flight}</div>
